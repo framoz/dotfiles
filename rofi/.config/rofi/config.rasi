@@ -1,40 +1,41 @@
 * {
     font: "Figtree 13";
-    g-spacing: 10px;
+    g-spacing: 12px;
     g-margin: 0;
-    b-color: #000000FF;
-    fg-color: #FFFFFFFF;
-    fgp-color: #888888FF;
-    b-radius: 8px;
-    g-padding: 8px;
-    hl-color: #FFFFFFFF;
-    hlt-color: #000000FF;
-    alt-color: #111111FF;
-    wbg-color: #000000CC;
+    b-color: #1a1b26FF;
+    fg-color: #c0caf5FF;
+    fgp-color: #565f89FF;
+    b-radius: 12px;
+    g-padding: 10px;
+    hl-color: #7aa2f7FF;
+    hlt-color: #1a1b26FF;
+    alt-color: #16161eFF;
+    wbg-color: #1a1b26E8;
     w-border: 2px solid;
-    w-border-color: #FFFFFFFF;
-    w-padding: 12px;
+    w-border-color: #7aa2f7DD;
+    w-padding: 16px;
 }
 
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: "";
+    display-drun: ">";
 }
 
 listview {
     columns: 1;
-    lines: 7;
+    lines: 8;
     fixed-height: true;
     fixed-columns: true;
     cycle: false;
     scrollbar: false;
     border: 0px solid;
+    spacing: 4px;
 }
 
 window {
     transparency: "real";
-    width: 450px;
+    width: 520px;
     border-radius: @b-radius;
     background-color: @wbg-color;
     border: @w-border;
@@ -43,22 +44,30 @@ window {
 }
 
 prompt {
-    text-color: @fg-color;
+    text-color: @hl-color;
+    background-color: #7aa2f722;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 inputbar {
     children: ["prompt", "entry"];
     spacing: @g-spacing;
+    background-color: #16161eff;
+    border-radius: 10px;
+    padding: 4px;
 }
 
 entry {
-    placeholder: "Search Apps";
+    placeholder: "Search applications...";
     text-color: @fg-color;
     placeholder-color: @fgp-color;
+    padding: 8px;
+    background-color: transparent;
 }
 
 mainbox {
-    spacing: @g-spacing;
+    spacing: 16px;
     margin: @g-margin;
     padding: @g-padding;
     children: ["inputbar", "listview", "message"];
@@ -67,35 +76,48 @@ mainbox {
 element {
     spacing: @g-spacing;
     margin: @g-margin;
-    padding: @g-padding;
+    padding: 10px 12px;
     border: 0px solid;
-    border-radius: @b-radius;
+    border-radius: 8px;
     border-color: @b-color;
     background-color: transparent;
     text-color: @fg-color;
 }
 
+element-icon {
+    size: 28px;
+    margin: 0 10px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
 element normal.normal {
-	background-color: transparent;
-	text-color: @fg-color;
+    background-color: transparent;
+    text-color: @fg-color;
 }
 
 element alternate.normal {
-	background-color: @alt-color;
-	text-color: @fg-color;
+    background-color: transparent;
+    text-color: @fg-color;
 }
 
 element selected.active {
-	background-color: @hl-color;
-	text-color: @hlt-color;
+    background-color: @hl-color;
+    text-color: @hlt-color;
+    border-radius: 8px;
 }
 
 element selected.normal {
-	background-color: @hl-color;
-	text-color: @hlt-color;
+    background-color: #7aa2f733;
+    text-color: @hl-color;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: @hl-color;
 }
 
 message {
-    background-color: red;
+    background-color: transparent;
     border: 0px solid;
 }
