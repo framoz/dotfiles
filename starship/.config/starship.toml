@@ -1,0 +1,43 @@
+# ── Tokyonight Starship ──
+
+format = """$directory$git_branch$git_status$python$nodejs$rust$java$character"""
+
+[character]
+success_symbol = "[❯](bold blue)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+style = "bold lavender"
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+read_only = " 󰌾"
+
+[git_branch]
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+symbol = " "
+
+[git_status]
+style = "bold red"
+format = '([$all_status$ahead_behind]($style) )'
+
+[python]
+style = "bold yellow"
+format = "[$symbol$version]($style) "
+symbol = "󰌠 "
+
+[nodejs]
+style = "bold green"
+format = "[$symbol$version]($style) "
+symbol = "󰎙 "
+
+[rust]
+style = "bold red"
+format = "[$symbol$version]($style) "
+symbol = "󱘗 "
+
+[java]
+style = "bold blue"
+format = "[$symbol$version]($style) "
+symbol = "󰬷 "
