@@ -40,6 +40,8 @@ tooltip label {
 #workspaces,
 #clock,
 #mpris,
+#cpu,
+#memory,
 #bluetooth,
 #network,
 #backlight,
@@ -95,6 +97,18 @@ tooltip label {
 
 #mpris.paused {
     color: @muted;
+}
+
+/* ── CPU ── */
+
+#cpu {
+    color: @blue;
+}
+
+/* ── Memory ── */
+
+#memory {
+    color: @yellow;
 }
 
 /* ── Bluetooth ── */
