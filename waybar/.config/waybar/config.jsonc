@@ -54,16 +54,18 @@
         "format-disabled": "󰂲",
         "tooltip-format": "{controller_alias}\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
     },
 
     "network": {
         "format-wifi": "󰤨  {signalStrength}%",
         "format-ethernet": "󰈀  {ipaddr}",
         "format-disconnected": "󰤭",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ipaddr}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ipaddr}\n{frequency}GHz\n↓{bandwidthDownBits} ↑{bandwidthUpBits}",
         "tooltip-format-ethernet": "{ifname}\n{ipaddr}/{cidr}",
-        "tooltip-format-disconnected": "Disconnected"
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor"
     },
 
     "backlight": {
