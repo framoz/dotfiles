@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:docs.rs)",
+      "WebFetch(domain:lib.rs)",
+      "Bash(curl:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git show:*)",
+      "Bash(echo:*)",
+      "Bash(grep:*)",
+      "Bash(git add:*)"
+    ],
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/framoz/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "microsoft-docs@microsoft-docs-marketplace": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "advisorModel": "opus",
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true
+}
