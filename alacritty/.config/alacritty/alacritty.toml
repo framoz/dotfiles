@@ -1,17 +1,18 @@
-# ── Tokyonight Alacritty ──
+# ── Brutalist Alacritty ──
 
 [window]
-opacity = 0.88
-blur = true
-padding = { x = 12, y = 8 }
+opacity = 1.0
+blur = false
+padding = { x = 8, y = 6 }
 decorations = "None"
+dynamic_padding = false
 
 [font]
 size = 12.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "Regular"
+style = "Bold"
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -19,34 +20,47 @@ style = "Bold"
 
 [font.italic]
 family = "JetBrainsMono Nerd Font"
-style = "Italic"
+style = "Bold Italic"
 
-# ── Tokyonight colors ──
+# ── Brutalist grayscale palette ──
+# No hues — only luminance. Colors typically used as panel backgrounds
+# (red/blue/magenta) are dark so white text stays readable; colors
+# typically used as foreground (green/yellow/cyan) are light so they
+# stay readable on black. Lets TUI apps (nmtui, dialog, whiptail) paint
+# legible panels and highlights.
 
 [colors.primary]
-background = "#1a1b26"
-foreground = "#c0caf5"
+background = "#000000"
+foreground = "#ffffff"
+
+[colors.cursor]
+text   = "#000000"
+cursor = "#ffffff"
+
+[colors.selection]
+text       = "#000000"
+background = "#ffffff"
 
 [colors.normal]
-black   = "#16161e"
-red     = "#f7768e"
-green   = "#9ece6a"
-yellow  = "#e0af68"
-blue    = "#7aa2f7"
-magenta = "#bb9af7"
-cyan    = "#7dcfff"
-white   = "#a9b1d6"
+black   = "#000000"
+red     = "#333333"
+green   = "#bbbbbb"
+yellow  = "#cccccc"
+blue    = "#222222"
+magenta = "#666666"
+cyan    = "#aaaaaa"
+white   = "#ffffff"
 
 [colors.bright]
-black   = "#565f89"
-red     = "#f7768e"
-green   = "#9ece6a"
-yellow  = "#e0af68"
-blue    = "#7aa2f7"
-magenta = "#bb9af7"
-cyan    = "#7dcfff"
-white   = "#c0caf5"
+black   = "#555555"
+red     = "#555555"
+green   = "#dddddd"
+yellow  = "#eeeeee"
+blue    = "#444444"
+magenta = "#888888"
+cyan    = "#cccccc"
+white   = "#ffffff"
 
 [cursor.style]
-shape = "Beam"
-blinking = "On"
+shape = "Block"
+blinking = "Off"
