@@ -1,4 +1,4 @@
-# ── Brutalist Alacritty ──
+# ── Blade Runner Alacritty ──
 
 [window]
 opacity = 1.0
@@ -22,44 +22,42 @@ style = "Bold"
 family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
-# ── Brutalist grayscale palette ──
-# No hues — only luminance. Colors typically used as panel backgrounds
-# (red/blue/magenta) are dark so white text stays readable; colors
-# typically used as foreground (green/yellow/cyan) are light so they
-# stay readable on black. Lets TUI apps (nmtui, dialog, whiptail) paint
-# legible panels and highlights.
+# ── Blade Runner palette ──
+# Deep night-blue-black, warm cream foreground, signature amber accent.
+# Cyan + pink for secondary neon. Bias toward warm tones; cool tones
+# only at low saturation to evoke the smoggy-noir atmosphere.
 
 [colors.primary]
-background = "#000000"
-foreground = "#ffffff"
+background = "#0d1117"
+foreground = "#d4c5a0"
 
 [colors.cursor]
-text   = "#000000"
-cursor = "#ffffff"
+text   = "#0d1117"
+cursor = "#ff8c42"
 
 [colors.selection]
-text       = "#000000"
-background = "#ffffff"
+text       = "#0d1117"
+background = "#ff8c42"
 
 [colors.normal]
-black   = "#000000"
-red     = "#333333"
-green   = "#bbbbbb"
-yellow  = "#cccccc"
-blue    = "#222222"
-magenta = "#666666"
-cyan    = "#aaaaaa"
-white   = "#ffffff"
+black   = "#161b22"
+red     = "#e85d5d"
+green   = "#87bc6e"
+yellow  = "#e6b450"
+blue    = "#6cc4d4"
+magenta = "#ff5e9c"
+cyan    = "#88d4d8"
+white   = "#d4c5a0"
 
 [colors.bright]
-black   = "#555555"
-red     = "#555555"
-green   = "#dddddd"
-yellow  = "#eeeeee"
-blue    = "#444444"
-magenta = "#888888"
-cyan    = "#cccccc"
-white   = "#ffffff"
+black   = "#4a4f5a"
+red     = "#ff7676"
+green   = "#a5d181"
+yellow  = "#ffcc66"
+blue    = "#88d4e4"
+magenta = "#ff7eb0"
+cyan    = "#a8e4e8"
+white   = "#e8d8b0"
 
 [cursor.style]
 shape = "Block"

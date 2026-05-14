@@ -1,11 +1,11 @@
-/* ── Brutalist Waybar ── */
+/* ── Blade Runner Waybar ── */
 
-@define-color bg     #000000;
-@define-color fg     #ffffff;
-@define-color muted  #555555;
-@define-color accent #ffffff;
-@define-color warn   #ffffff;
-@define-color crit   #ffffff;
+@define-color bg     #0d1117;
+@define-color fg     #d4c5a0;
+@define-color muted  #4a4f5a;
+@define-color accent #ff8c42;
+@define-color warn   #e6b450;
+@define-color crit   #e85d5d;
 
 * {
     font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
@@ -18,12 +18,11 @@
 window#waybar {
     background: @bg;
     color: @fg;
-    border-bottom: 2px solid @fg;
 }
 
 tooltip {
     background: @bg;
-    border: 1px solid @fg;
+    border: 1px solid @accent;
     color: @fg;
 }
 
@@ -46,7 +45,7 @@ tooltip label {
     color: @fg;
     padding: 2px 10px;
     margin: 0;
-    border-left: 1px solid @fg;
+    border-left: 1px solid @muted;
     min-height: 0;
 }
 
@@ -63,8 +62,7 @@ tooltip label {
 }
 
 #workspaces button.active {
-    color: @fg;
-    background: @fg;
+    background: @accent;
     color: @bg;
 }
 
@@ -73,12 +71,12 @@ tooltip label {
 }
 
 #workspaces button:hover {
-    background: @fg;
+    background: @accent;
     color: @bg;
 }
 
 #clock {
-    color: @fg;
+    color: @accent;
 }
 
 #mpris.paused,
@@ -88,10 +86,12 @@ tooltip label {
     color: @muted;
 }
 
-#battery.warning:not(.charging),
+#battery.warning:not(.charging) {
+    color: @warn;
+}
+
 #battery.critical:not(.charging) {
-    color: @fg;
-    background: @fg;
+    background: @crit;
     color: @bg;
 }
 

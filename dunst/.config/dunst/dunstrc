@@ -1,4 +1,4 @@
-# ── Brutalist Dunst ──
+# ── Blade Runner Dunst ──
 
 [global]
     # ── Display ──
@@ -14,10 +14,10 @@
 
     # ── Appearance ──
     frame_width = 2
-    frame_color = "#ffffff"
+    frame_color = "#ff8c42"
     corner_radius = 0
     separator_height = 2
-    separator_color = "#ffffff"
+    separator_color = "#ff8c42"
     padding = 12
     horizontal_padding = 14
     text_icon_padding = 12
@@ -60,22 +60,22 @@
     mouse_right_click = close_all
 
 [urgency_low]
-    background = "#000000"
-    foreground = "#ffffff"
-    frame_color = "#555555"
-    highlight = "#ffffff"
+    background = "#0d1117"
+    foreground = "#d4c5a0"
+    frame_color = "#4a4f5a"
+    highlight = "#ff8c42"
     timeout = 5
 
 [urgency_normal]
-    background = "#000000"
-    foreground = "#ffffff"
-    frame_color = "#ffffff"
-    highlight = "#ffffff"
+    background = "#0d1117"
+    foreground = "#d4c5a0"
+    frame_color = "#ff8c42"
+    highlight = "#ff8c42"
     timeout = 8
 
 [urgency_critical]
-    background = "#ffffff"
-    foreground = "#000000"
-    frame_color = "#ffffff"
-    highlight = "#000000"
+    background = "#e85d5d"
+    foreground = "#0d1117"
+    frame_color = "#ff8c42"
+    highlight = "#0d1117"
     timeout = 0

@@ -1,11 +1,11 @@
-/* ── Brutalist Rofi ── */
+/* ── Blade Runner Rofi ── */
 
 * {
     font: "JetBrainsMono Nerd Font Bold 12";
-    bg:     #000000ff;
-    fg:     #ffffffff;
-    muted:  #555555ff;
-    border: #ffffffff;
+    bg:     #0d1117ff;
+    fg:     #d4c5a0ff;
+    muted:  #4a4f5aff;
+    accent: #ff8c42ff;
 }
 
 configuration {
@@ -20,7 +20,7 @@ window {
     border-radius: 0px;
     background-color: @bg;
     border: 2px solid;
-    border-color: @border;
+    border-color: @accent;
     padding: 0;
 }
 
@@ -36,12 +36,12 @@ inputbar {
     spacing: 8px;
     background-color: @bg;
     border: 0 0 2px 0 solid;
-    border-color: @border;
+    border-color: @accent;
     padding: 10px 12px;
 }
 
 prompt {
-    text-color: @fg;
+    text-color: @accent;
     background-color: transparent;
     padding: 0;
 }
@@ -97,7 +97,7 @@ element alternate.normal {
 
 element selected.normal,
 element selected.active {
-    background-color: @fg;
+    background-color: @accent;
     text-color: @bg;
     border: 0;
     border-radius: 0;
