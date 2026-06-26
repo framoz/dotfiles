@@ -1,4 +1,4 @@
-# ── Blade Runner Dunst ──
+# ── Tokyonight Dunst ──
 
 [global]
     # ── Display ──
@@ -7,32 +7,32 @@
 
     # ── Geometry ──
     width = 350
-    height = (0, 120)
+    height = 120
     origin = top-right
-    offset = (12, 12)
+    offset = 12x12
     notification_limit = 5
 
     # ── Appearance ──
     frame_width = 2
-    frame_color = "#ff8c42"
-    corner_radius = 0
+    frame_color = "#7aa2f7"
+    corner_radius = 12
     separator_height = 2
-    separator_color = "#ff8c42"
+    separator_color = "#24283b"
     padding = 12
     horizontal_padding = 14
     text_icon_padding = 12
-    gap_size = 4
+    gap_size = 6
 
     # ── Progress bar (volume/brightness OSD) ──
     progress_bar = true
     progress_bar_height = 8
-    progress_bar_frame_width = 2
+    progress_bar_frame_width = 0
     progress_bar_min_width = 200
     progress_bar_max_width = 320
-    progress_bar_corner_radius = 0
+    progress_bar_corner_radius = 4
 
     # ── Text ──
-    font = JetBrainsMono Nerd Font Bold 10
+    font = JetBrainsMono Nerd Font 10
     markup = full
     format = "<b>%s</b>\n%b"
     alignment = left
@@ -60,22 +60,22 @@
     mouse_right_click = close_all
 
 [urgency_low]
-    background = "#0d1117"
-    foreground = "#d4c5a0"
-    frame_color = "#4a4f5a"
-    highlight = "#ff8c42"
+    background = "#1a1b26"
+    foreground = "#565f89"
+    frame_color = "#24283b"
+    highlight = "#7aa2f7"
     timeout = 5
 
 [urgency_normal]
-    background = "#0d1117"
-    foreground = "#d4c5a0"
-    frame_color = "#ff8c42"
-    highlight = "#ff8c42"
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    frame_color = "#7aa2f7"
+    highlight = "#7aa2f7"
     timeout = 8
 
 [urgency_critical]
-    background = "#e85d5d"
-    foreground = "#0d1117"
-    frame_color = "#ff8c42"
-    highlight = "#0d1117"
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    frame_color = "#f7768e"
+    highlight = "#f7768e"
     timeout = 0

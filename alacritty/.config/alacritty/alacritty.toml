@@ -1,18 +1,17 @@
-# ── Blade Runner Alacritty ──
+# ── Tokyonight Alacritty ──
 
 [window]
-opacity = 1.0
-blur = false
-padding = { x = 8, y = 6 }
+opacity = 0.88
+blur = true
+padding = { x = 12, y = 8 }
 decorations = "None"
-dynamic_padding = false
 
 [font]
 size = 12.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "Bold"
+style = "Regular"
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -20,45 +19,34 @@ style = "Bold"
 
 [font.italic]
 family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
+style = "Italic"
 
-# ── Blade Runner palette ──
-# Deep night-blue-black, warm cream foreground, signature amber accent.
-# Cyan + pink for secondary neon. Bias toward warm tones; cool tones
-# only at low saturation to evoke the smoggy-noir atmosphere.
+# ── Tokyonight colors ──
 
 [colors.primary]
-background = "#0d1117"
-foreground = "#d4c5a0"
-
-[colors.cursor]
-text   = "#0d1117"
-cursor = "#ff8c42"
-
-[colors.selection]
-text       = "#0d1117"
-background = "#ff8c42"
+background = "#1a1b26"
+foreground = "#c0caf5"
 
 [colors.normal]
-black   = "#161b22"
-red     = "#e85d5d"
-green   = "#87bc6e"
-yellow  = "#e6b450"
-blue    = "#6cc4d4"
-magenta = "#ff5e9c"
-cyan    = "#88d4d8"
-white   = "#d4c5a0"
+black   = "#16161e"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#a9b1d6"
 
 [colors.bright]
-black   = "#4a4f5a"
-red     = "#ff7676"
-green   = "#a5d181"
-yellow  = "#ffcc66"
-blue    = "#88d4e4"
-magenta = "#ff7eb0"
-cyan    = "#a8e4e8"
-white   = "#e8d8b0"
+black   = "#565f89"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c0caf5"
 
 [cursor.style]
-shape = "Block"
-blinking = "Off"
+shape = "Beam"
+blinking = "On"

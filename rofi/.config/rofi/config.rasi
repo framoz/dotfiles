@@ -1,57 +1,25 @@
-/* ── Blade Runner Rofi ── */
-
 * {
-    font: "JetBrainsMono Nerd Font Bold 12";
-    bg:     #0d1117ff;
-    fg:     #d4c5a0ff;
-    muted:  #4a4f5aff;
-    accent: #ff8c42ff;
+    font: "Figtree 13";
+    g-spacing: 12px;
+    g-margin: 0;
+    b-color: #1a1b26FF;
+    fg-color: #c0caf5FF;
+    fgp-color: #565f89FF;
+    b-radius: 12px;
+    g-padding: 10px;
+    hl-color: #7aa2f7FF;
+    hlt-color: #1a1b26FF;
+    alt-color: #16161eFF;
+    wbg-color: #1a1b26E8;
+    w-border: 2px solid;
+    w-border-color: #7aa2f7DD;
+    w-padding: 16px;
 }
 
 configuration {
     modi: "drun";
     show-icons: true;
     display-drun: ">";
-}
-
-window {
-    transparency: "real";
-    width: 520px;
-    border-radius: 0px;
-    background-color: @bg;
-    border: 2px solid;
-    border-color: @accent;
-    padding: 0;
-}
-
-mainbox {
-    spacing: 0;
-    margin: 0;
-    padding: 0;
-    children: ["inputbar", "listview"];
-}
-
-inputbar {
-    children: ["prompt", "entry"];
-    spacing: 8px;
-    background-color: @bg;
-    border: 0 0 2px 0 solid;
-    border-color: @accent;
-    padding: 10px 12px;
-}
-
-prompt {
-    text-color: @accent;
-    background-color: transparent;
-    padding: 0;
-}
-
-entry {
-    placeholder: "Search applications...";
-    text-color: @fg;
-    placeholder-color: @muted;
-    padding: 0;
-    background-color: transparent;
 }
 
 listview {
@@ -61,49 +29,95 @@ listview {
     fixed-columns: true;
     cycle: false;
     scrollbar: false;
-    border: 0;
-    spacing: 0;
-    padding: 4px 0;
-    background-color: @bg;
+    border: 0px solid;
+    spacing: 4px;
+}
+
+window {
+    transparency: "real";
+    width: 520px;
+    border-radius: @b-radius;
+    background-color: @wbg-color;
+    border: @w-border;
+    border-color: @w-border-color;
+    padding: @w-padding;
+}
+
+prompt {
+    text-color: @hl-color;
+    background-color: #7aa2f722;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+inputbar {
+    children: ["prompt", "entry"];
+    spacing: @g-spacing;
+    background-color: #16161eff;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+entry {
+    placeholder: "Search applications...";
+    text-color: @fg-color;
+    placeholder-color: @fgp-color;
+    padding: 8px;
+    background-color: transparent;
+}
+
+mainbox {
+    spacing: 16px;
+    margin: @g-margin;
+    padding: @g-padding;
+    children: ["inputbar", "listview", "message"];
 }
 
 element {
-    spacing: 10px;
-    margin: 0;
-    padding: 8px 12px;
-    border: 0;
-    border-radius: 0;
+    spacing: @g-spacing;
+    margin: @g-margin;
+    padding: 10px 12px;
+    border: 0px solid;
+    border-radius: 8px;
+    border-color: @b-color;
     background-color: transparent;
-    text-color: @fg;
+    text-color: @fg-color;
 }
 
 element-icon {
-    size: 22px;
-    margin: 0 8px 0 0;
-    background-color: transparent;
+    size: 28px;
+    margin: 0 10px 0 0;
 }
 
 element-text {
     vertical-align: 0.5;
-    background-color: transparent;
-    text-color: inherit;
 }
 
-element normal.normal,
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg-color;
+}
+
 element alternate.normal {
     background-color: transparent;
-    text-color: @fg;
+    text-color: @fg-color;
 }
 
-element selected.normal,
 element selected.active {
-    background-color: @accent;
-    text-color: @bg;
-    border: 0;
-    border-radius: 0;
+    background-color: @hl-color;
+    text-color: @hlt-color;
+    border-radius: 8px;
+}
+
+element selected.normal {
+    background-color: #7aa2f733;
+    text-color: @hl-color;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: @hl-color;
 }
 
 message {
     background-color: transparent;
-    border: 0;
+    border: 0px solid;
 }
